@@ -1,0 +1,179 @@
+body {
+  font-family:"Roboto", sans-serif;
+  background-color: #F2F2F2;
+  margin:0px;
+  padding:0px;
+  display: grid;
+  justify-content: center;
+  gap:40px;
+}
+
+noscript {
+  text-align: center;
+}
+
+p,h1,h4 {
+  margin:0px;
+  color: #262626;
+}
+
+label {
+  color: #262626;
+}
+
+#titulo {
+
+  margin-top: 60px;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  background-color: #FFF;
+  padding: 60px;
+  /* width: 680px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+  
+}
+
+.container-input label{
+  display: block;
+  font-size:1.25rem;
+  margin-bottom: 8px;
+  color: #262626;
+}
+
+.container-input input{
+  width: 260px;
+  height: 48px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #B1B1B1;
+  border-radius: 4px;
+  display: block;
+}
+
+input.invalido {
+  border: 1px solid red;
+}
+
+span.erro {
+  display: block;
+  margin-top: 4px;
+  color: rgb(238, 75, 75);
+}
+
+#container-radio-btnCalculo {
+  display: grid;
+  align-content: space-between;
+  justify-items: start;
+}
+
+#container-radio p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.radio {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom:15px;
+}
+
+.radio label {
+  margin:0px;
+  font-size: 20px;
+}
+
+.radio input {
+  width: 18px;
+  height: 18px;
+  margin: 0px;
+}
+
+button {
+  letter-spacing: 0.02rem;
+  border:none;
+  color:#ffffff;
+  font-size: 1.25rem;
+  font-weight:500;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color:#37A2E4;
+}
+
+button:hover{
+  background-color:#2381bb;
+}
+
+#container-resultado {
+  border: 1px solid #B1B1B1; 
+  padding: 26px;
+  border-radius:4px;
+ 
+}
+
+#container-resultado h4 {
+  font-size: 1.25rem;
+  letter-spacing: 0.02rem;
+  font-weight: 700;
+  color:#888888;
+  margin-bottom: 26px;
+}
+
+.resultado-info {
+  margin-top: 20px;
+}
+
+.resultado-subtitulo {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color:#8B8B8B;
+  margin-bottom:6px;
+  letter-spacing: 0.04rem;
+}
+
+.resultado-valor {
+  font-size: 1.5rem;
+}
+
+@media(max-width:700px){
+
+  body {
+    gap:24px;
+  }
+
+  #titulo{
+    margin-top: 32px;
+    font-size:32px;
+  }
+
+  form{
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  #altura {
+    grid-row: 2;
+  }
+
+  .container-input input {
+    width: 100%;
+  }
+
+  #container-radio {
+    margin-bottom: 32px;
+  }
+
+  .resultado-valor {
+    font-size: 1.25rem;
+  }
+}
